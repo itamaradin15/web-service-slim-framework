@@ -1,0 +1,35 @@
+<?php $__env->startSection('content'); ?>
+		<div class="col-md-6">
+			<h1>list of users</h1>
+			<table class="table">
+			<thead>
+			<tr>
+				<th>Name</th>
+				<th>Last Name</th>
+				<th>email</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+				<tbody>
+				<?php foreach ($usuarios as $key => $value): ?>
+			<tr>
+				<td class="info"><?php echo $value['nombre']; ?></td>
+				<td class="warning"><?php echo $value['apellido']; ?></td>
+				<td class="danger"><?php echo $value['correo']; ?></td>
+				<td class="active"><a href="edit/<?php echo $value['id']; ?>/profile">
+				<span class='glyphicon glyphicon-edit'></span></a></td>
+
+				<td class="active"><a href="del/<?php echo $value['id']; ?>/profile">
+				<span class='glyphicon glyphicon-trash'></span></a></td>
+			</tr>
+		</tbody>
+				<?php endforeach; ?>
+			</table>
+				<a href="new/profile" class="btn btn-primary">Add profile</a>
+			</div>
+		</div>
+	</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('index', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
