@@ -5,6 +5,7 @@
 /vendor
 /cache
 /.idea
+/.openshift
 /.vagrant
 Homestead.json
 Homestead.yaml
