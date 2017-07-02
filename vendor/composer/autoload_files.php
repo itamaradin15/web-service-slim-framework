@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    $vendorDir . '/illuminate/support/Illuminate/Support/helpers.php',
-    $vendorDir . '/vrana/notorm/NotORM.php',
+    '3b5531f8bb4716e1b6014ad7e734f545' => $vendorDir . '/illuminate/support/Illuminate/Support/helpers.php',
+    '17fd9fef37c97cfdc0c7794299a8423d' => $vendorDir . '/vrana/notorm/NotORM.php',
 );
